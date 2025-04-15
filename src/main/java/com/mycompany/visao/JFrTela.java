@@ -4,17 +4,22 @@
  */
 package com.mycompany.visao;
 
+import com.mycompany.controle.ControleCalculadora;
+import com.mycompany.enums.EnumOperacao;
+
 /**
  *
  * @author 08253
  */
 public class JFrTela extends javax.swing.JFrame {
 
+    private ControleCalculadora controleCalculadora;
     /**
      * Creates new form JFrTela
      */
     public JFrTela() {
         initComponents();
+        controleCalculadora = new ControleCalculadora();
     }
 
     /**
@@ -304,18 +309,22 @@ private void limpa(){
 
     private void btnAdicaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicaoActionPerformed
         // TODO add your handling code here:
+        controleCalculadora.realizaOperacao(EnumOperacao.SOMA, Double.NaN)
     }//GEN-LAST:event_btnAdicaoActionPerformed
 
     private void btnSubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtracaoActionPerformed
         // TODO add your handling code here:
+        controleCalculadora.realizaOperacao(EnumOperacao.SUBTRACAO, Double.NaN)
     }//GEN-LAST:event_btnSubtracaoActionPerformed
 
     private void btnMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacaoActionPerformed
         // TODO add your handling code here:
+        controleCalculadora.realizaOperacao(EnumOperacao.MULTIPLICACAO, Double.NaN)
     }//GEN-LAST:event_btnMultiplicacaoActionPerformed
 
     private void btnDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisaoActionPerformed
         // TODO add your handling code here:
+        controleCalculadora.realizaOperacao(EnumOperacao.MULTIPLICACAO, Double.NaN)
     }//GEN-LAST:event_btnDivisaoActionPerformed
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
