@@ -28,7 +28,7 @@ public class JFrTela extends javax.swing.JFrame {
 
         jButton21 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
-        txtVisor = new javax.swing.JTextField();
+        tfVisor = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         btn7 = new javax.swing.JButton();
         btn8 = new javax.swing.JButton();
@@ -53,12 +53,12 @@ public class JFrTela extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtVisor.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        txtVisor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtVisor.setText("0,00");
-        txtVisor.addActionListener(new java.awt.event.ActionListener() {
+        tfVisor.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        tfVisor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        tfVisor.setText("0");
+        tfVisor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtVisorActionPerformed(evt);
+                tfVisorActionPerformed(evt);
             }
         });
 
@@ -66,66 +66,146 @@ public class JFrTela extends javax.swing.JFrame {
 
         btn7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn7);
 
         btn8.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn8);
 
         btn9.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn9);
 
         btnLimpar.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnLimpar.setText("AC");
+        btnLimpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimparActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnLimpar);
 
         btn4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn4);
 
         btn5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn5);
 
         btn6.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn6);
 
         btnDivisao.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnDivisao.setText("/");
+        btnDivisao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDivisaoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnDivisao);
 
         btn1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn1);
 
         btn2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn2);
 
         btn3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn3);
 
         btnMultiplicacao.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnMultiplicacao.setText("*");
+        btnMultiplicacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMultiplicacaoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnMultiplicacao);
 
         btnResultado.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnResultado.setText("=");
+        btnResultado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResultadoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnResultado);
 
         btn0.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btn0.setText("0");
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn0);
 
         btnAdicao.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnAdicao.setText("+");
+        btnAdicao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdicaoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnAdicao);
 
         btnSubtracao.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         btnSubtracao.setText("-");
+        btnSubtracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubtracaoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnSubtracao);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -135,62 +215,111 @@ public class JFrTela extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
-                    .addComponent(txtVisor))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
+                    .addComponent(tfVisor))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(txtVisor, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tfVisor, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtVisorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVisorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVisorActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFrTela.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new JFrTela().setVisible(true);
-            }
-        });
+private void digita(String caractere) {
+    if (tfVisor.getText().equals("0")) {
+        tfVisor.setText(caractere);
+    } else {
+        tfVisor.setText(tfVisor.getText().concat(caractere));
     }
+}
+    
+    private void tfVisorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfVisorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfVisorActionPerformed
 
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+        digita("7");
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+        digita("8");
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+        digita("9");
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+        digita("4");
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+        digita("5");
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+        digita("6");
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+        digita("1");
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+        digita("2");
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+        digita("3");
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        // TODO add your handling code here:
+        digita("0");
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnResultadoActionPerformed
+
+    private void btnAdicaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAdicaoActionPerformed
+
+    private void btnSubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtracaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSubtracaoActionPerformed
+
+    private void btnMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMultiplicacaoActionPerformed
+
+    private void btnDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDivisaoActionPerformed
+
+    private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLimparActionPerformed
+
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn0;
     private javax.swing.JButton btn1;
@@ -211,6 +340,6 @@ public class JFrTela extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton24;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtVisor;
+    private javax.swing.JTextField tfVisor;
     // End of variables declaration//GEN-END:variables
 }

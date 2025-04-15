@@ -4,6 +4,7 @@
 
 package com.mycompany.calculadora;
 
+import com.mycompany.visao.JFrTela;
 /**
  *
  * @author 08253
@@ -11,6 +12,12 @@ package com.mycompany.calculadora;
 public class Calculadora {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+                 java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new JFrTela().setVisible(true);
+            }
+        });
+        
     }
 }
