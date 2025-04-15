@@ -239,7 +239,11 @@ private void digita(String caractere) {
         tfVisor.setText(tfVisor.getText().concat(caractere));
     }
 }
-    
+
+private void limpa(){
+    tfVisor.setText("0");
+}
+
     private void tfVisorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfVisorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfVisorActionPerformed
@@ -316,6 +320,7 @@ private void digita(String caractere) {
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
         // TODO add your handling code here:
+        limpa();
     }//GEN-LAST:event_btnLimparActionPerformed
 
 
